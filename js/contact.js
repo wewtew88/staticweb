@@ -59,6 +59,8 @@ const handleFormSubmission = (form) => {
         if (response.ok) {
           if (submitModal) {
             submitModal.classList.add("active");
+          } else {
+            alert("Thanks. Your quote request has been sent.");
           }
           form.reset();
         } else {
@@ -74,4 +76,4 @@ const handleFormSubmission = (form) => {
   });
 };
 
-handleFormSubmission(document.getElementById("contactForm"));
+document.querySelectorAll("form[data-contact-form]").forEach(handleFormSubmission);

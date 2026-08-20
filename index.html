@@ -408,18 +408,18 @@
         <div><i class="fa-solid fa-location-dot"></i> Melbourne, Victoria</div>
       </div>
       <div class="contact-form">
-        <form>
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
-          <input type="text" placeholder="Phone Number">
-          <select>
-            <option>Select Service</option>
+        <form id="homeContactForm" data-contact-form action="https://formspree.io/f/maewwlan" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <select name="service" required>
+            <option value="">Select Service</option>
             <option>Residential</option>
             <option>Commercial</option>
             <option>Deep Cleaning</option>
             <option>Carpet Cleaning</option>
           </select>
-          <textarea rows="6" placeholder="Your Message"></textarea>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
           <button class="primary-btn">Book Cleaning</button>
         </form>
       </div>
