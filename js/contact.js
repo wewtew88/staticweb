@@ -1,5 +1,5 @@
 /* =====================================
-   CrystalClean Contact Form
+  EverClean Solutions Contact Form
 ===================================== */
 
 const submitModal = document.getElementById("submitModal");

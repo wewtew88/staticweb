@@ -1,5 +1,5 @@
 /* =====================================
-   CrystalClean Preloader
+  EverClean Solutions Preloader
 ===================================== */
 
 (function () {

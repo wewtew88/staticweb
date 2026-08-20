@@ -1,5 +1,5 @@
 /* =====================================================
-   CrystalClean Floating Widgets
+  EverClean Solutions Floating Widgets
 ===================================================== */
 
 /* WhatsApp Button */
@@ -22,25 +22,6 @@
 }
 .whatsapp-btn:hover {
   transform: translateY(-6px) scale(1.05);
-}
-
-/* Booking Button */
-.booking-btn {
-  position: fixed;
-  right: 30px;
-  bottom: 40px;
-  background: #0077B6;
-  color: white;
-  padding: 15px 24px;
-  border-radius: 50px;
-  font-weight: 700;
-  z-index: 999;
-  box-shadow: 0 15px 35px rgba(0, 119, 182, 0.3);
-  transition: 0.35s;
-}
-.booking-btn:hover {
-  background: #005F99;
-  transform: translateY(-4px);
 }
 
 /* Cookie Banner */
@@ -73,11 +54,6 @@
 }
 
 @media (max-width: 600px) {
-  .booking-btn {
-    right: 15px;
-    bottom: 20px;
-    padding: 15px 20px;
-  }
   .whatsapp-btn {
     right: 20px;
     bottom: 90px;

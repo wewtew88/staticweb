@@ -1,5 +1,5 @@
 /* =====================================================
-   CrystalClean Responsive Styles
+  EverClean Solutions Responsive Styles
 ===================================================== */
 
 /* Large Tablets (1200px) */
@@ -12,6 +12,7 @@
 /* Tablets (992px) */
 @media (max-width: 992px) {
   .nav-links { display: none; }
+  .nav-links.active { display: flex; }
   .hamburger { display: block; }
 
   .hero-content { grid-template-columns: 1fr; text-align: center; }

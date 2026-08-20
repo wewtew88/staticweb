@@ -1,5 +1,5 @@
 /* =====================================
-   CrystalClean Gallery
+  EverClean Solutions Gallery
 ===================================== */
 
 const items = document.querySelectorAll(".gallery-item");
@@ -21,18 +21,24 @@ const lightbox = document.querySelector(".lightbox");
 const image = document.getElementById("lightbox-image");
 
 items.forEach(item => {
-  item.onclick = () => {
-    lightbox.classList.add("active");
-    image.src = item.querySelector("img").src;
-  };
+  if (lightbox && image) {
+    item.onclick = () => {
+      lightbox.classList.add("active");
+      image.src = item.querySelector("img").src;
+    };
+  }
 });
 
-document.querySelector(".close-lightbox").onclick = () => {
-  lightbox.classList.remove("active");
-};
+const closeLightbox = document.querySelector(".close-lightbox");
 
-lightbox.onclick = (e) => {
-  if (e.target === lightbox) {
+if (closeLightbox && lightbox) {
+  closeLightbox.onclick = () => {
     lightbox.classList.remove("active");
-  }
-};
+  };
+
+  lightbox.onclick = (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  };
+}

@@ -1,52 +1,64 @@
-/* =====================================
-   Booking Modal
-===================================== */
+.modal-box {
+  position: relative;
 
-.booking-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 99999;
-}
-.booking-modal.active,
-.feedback-modal.active {
-  display: flex;
+  width: 100%;
+  max-width: 550px;
+
+  max-height: calc(100vh - 40px);
+
+  background: #fff;
+  border-radius: 15px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
 }
 
+/* Quote submission feedback */
 .feedback-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10000;
 }
 
-.modal-box {
-  background: white;
-  width: min(500px, 90%);
-  padding: 45px;
-  border-radius: 30px;
-  position: relative;
+.feedback-modal.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
+.feedback-modal .modal-box {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.feedback-modal.active .modal-box {
+  transform: translateY(0);
+}
+
+/* Close button */
 .modal-close {
   position: absolute;
-  right: 25px;
-  top: 20px;
-  font-size: 35px;
+  top: 15px;
+  right: 20px;
+
+  font-size: 30px;
+  line-height: 1;
+
   cursor: pointer;
 }
 
-.modal-box input,
-.modal-box select {
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-}
