@@ -1,0 +1,29 @@
+/* =====================================
+   Website Preloader
+===================================== */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+}
+
+.loader {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 8px solid #EAF7FF;
+  border-top-color: #0077B6;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}

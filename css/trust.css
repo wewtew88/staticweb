@@ -1,0 +1,93 @@
+/* =====================================================
+   CrystalClean Trust & Testimonials
+===================================================== */
+
+/* Why Us Section */
+.why-us {
+  padding: 120px 0;
+  background: #f8fcff;
+}
+.why-grid {
+  width: min(1200px, 90%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.why-card {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.35s;
+}
+.why-card:hover {
+  transform: translateY(-10px);
+}
+.why-card i {
+  font-size: 40px;
+  color: #0077B6;
+  margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats {
+  padding: 80px 0;
+  background: #0077B6;
+}
+.stats-grid {
+  width: min(1100px, 90%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.stat-box h2 {
+  font-size: 55px;
+  color: white;
+}
+.stat-box p {
+  color: white;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 120px 0;
+}
+.testimonial-grid {
+  width: min(1200px, 90%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.testimonial-card {
+  padding: 35px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+.stars {
+  color: #FFC107;
+  font-size: 25px;
+}
+.testimonial-card span {
+  color: #777;
+}
+
+@media (max-width: 900px) {
+  .why-grid,
+  .stats-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid,
+  .stats-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}

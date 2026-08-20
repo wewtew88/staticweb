@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact CrystalClean for a free quote on house cleaning, office cleaning, deep cleaning, carpet cleaning and end of lease cleaning services.">
+  <meta name="keywords" content="book cleaning service, cleaning quote Australia, house cleaning quote, commercial cleaning quote">
+  <meta name="author" content="CrystalClean">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="canonical" href="https://www.crystalclean.com.au/contact.html">
+  <title>Contact CrystalClean | Book Cleaning Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="css/widgets.css">
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-spray-can-sparkles"></i>
+        <h2>Crystal<span>Clean</span></h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="quote-btn">Get Quote</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="contact-hero">
+    <div class="hero-content">
+      <div class="hero-left fade-right">
+        <span class="hero-tag">CONTACT US</span>
+        <h1>Let’s make your space sparkle.</h1>
+        <p>Whether you need the weekly refresh or a one-off deep clean, our team is ready to help you book the right service. Tell us your goals and we will recommend the most efficient, reliable cleaning solution for your home or workplace.</p>
+        <div class="hero-buttons">
+          <a href="#contact-form" class="primary-btn pulse-glow">Request a Quote</a>
+          <a href="services.html" class="secondary-btn">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-right fade-left">
+        <div class="hero-card float-soft">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Contact us for cleaning services">
+          <p>We respond quickly, provide clear guidance, and help you choose the best service for your property. Our friendly team is available to answer questions, tailor packages, and make booking simple.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services page-section">
+    <div class="section-title fade-up">
+      <span>GET IN TOUCH</span>
+      <h2>We’re here to help</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card zoom-in" style="transition-delay: 0s;">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Call Us</h3>
+        <p>+61 400 123 456</p>
+      </div>
+      <div class="service-card zoom-in" style="transition-delay: 0.05s;">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>hello@crystalclean.com</p>
+      </div>
+      <div class="service-card zoom-in" style="transition-delay: 0.1s;">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Office</h3>
+        <p>Sydney, Australia</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact page-section-alt" id="contact-form">
+    <div class="contact-container">
+      <div class="contact-info fade-left">
+        <span>BOOK TODAY</span>
+        <h2>Request a free quote</h2>
+        <p>Fill out the form and we’ll get back to you with a tailored cleaning plan within 24 hours.</p>
+        <div><i class="fa-solid fa-clock"></i> Monday – Friday 8:00 AM – 6:00 PM</div>
+        <div><i class="fa-solid fa-shield"></i> Fully insured and trusted by local customers</div>
+        <div><i class="fa-solid fa-star"></i> Rated highly for reliability and detail</div>
+      </div>
+      <div class="contact-form fade-right">
+        <form id="contactForm" action="https://formspree.io/f/maewwlan" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <select name="service" required>
+            <option value="">Select Cleaning Service</option>
+            <option>Residential Cleaning</option>
+            <option>Commercial Cleaning</option>
+            <option>Deep Cleaning</option>
+            <option>Carpet Cleaning</option>
+            <option>Window Cleaning</option>
+            <option>End of Lease Cleaning</option>
+          </select>
+          <textarea name="message" rows="6" placeholder="Tell us about your cleaning requirements..." required></textarea>
+          <button class="primary-btn">Request Free Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="feedback-modal" id="submitModal">
+    <div class="modal-box">
+      <span class="modal-close" id="closeSubmit">&times;</span>
+      <h2>Quote Request Sent</h2>
+      <p>Your quote request is on its way. We’ll notify you once it has been received successfully.</p>
+      <button class="primary-btn" id="closeSubmitButton">Close</button>
+    </div>
+  </div>
+
+  <section class="gallery page-section">
+    <div class="section-title">
+      <span>LOCATION</span>
+      <h2>Visit our office</h2>
+    </div>
+    <div class="container">
+      <iframe src="https://www.google.com/maps?q=Sydney,+Australia&output=embed" width="100%" height="500" style="border:0;border-radius:24px;" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="faq page-section-alt">
+    <div class="section-title">
+      <span>QUESTIONS</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>How quickly can I book?</h3>
+        <p>Most bookings are available within 24 to 48 hours.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you bring cleaning supplies?</h3>
+        <p>Yes. We provide professional equipment and eco-friendly products.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer recurring cleaning?</h3>
+        <p>Yes. Weekly, fortnightly, and monthly services are available.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h2>Crystal<span>Clean</span></h2>
+        <p>Professional residential and commercial cleaning services throughout Australia.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 CrystalClean. All Rights Reserved.</div>
+  </footer>
+
+  <a href="https://wa.me/61400123456" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <div class="cookie-banner" id="cookieBanner">
+    <p>We use cookies to improve your browsing experience.</p>
+    <button id="acceptCookie">Accept</button>
+  </div>
+
+  <div class="booking-modal" id="bookingModal">
+    <div class="modal-box">
+      <span class="modal-close" id="closeBooking">&times;</span>
+      <h2>Book Your Cleaning</h2>
+      <p>Get a free quote from our cleaning specialists.</p>
+      <form id="bookingForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <select required>
+          <option value="">Select Cleaning Service</option>
+          <option>Residential Cleaning</option>
+          <option>Commercial Cleaning</option>
+          <option>Deep Cleaning</option>
+          <option>Carpet Cleaning</option>
+          <option>End Of Lease Cleaning</option>
+        </select>
+        <textarea placeholder="Tell us about your cleaning needs" rows="4"></textarea>
+        <button class="primary-btn">Request Quote</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+</html>

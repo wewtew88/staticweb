@@ -1,0 +1,52 @@
+/* =====================================
+   Booking Modal
+===================================== */
+
+.booking-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+.booking-modal.active,
+.feedback-modal.active {
+  display: flex;
+}
+
+.feedback-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.modal-box {
+  background: white;
+  width: min(500px, 90%);
+  padding: 45px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
