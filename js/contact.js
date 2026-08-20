@@ -34,6 +34,8 @@ const handleFormSubmission = (form) => {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
+    const submitButton = form.querySelector('button[type="submit"]');
+
     const name = form.querySelector('input[name="name"]').value.trim();
     const email = form.querySelector('input[name="email"]').value.trim();
     const phone = form.querySelector('input[name="phone"]').value.trim();
@@ -64,15 +66,28 @@ const handleFormSubmission = (form) => {
           }
           form.reset();
         } else {
-          return response.json().then((data) => {
-            const errorMessage = data.error || "Unable to submit the form. Please try again.";
-            alert(errorMessage);
-          });
+          return response.json()
+            .catch(() => ({}))
+            .then((data) => {
+              const errorMessage = data.error || "Unable to send your request. Please check your details and try again.";
+              alert(errorMessage);
+            });
         }
       })
       .catch(() => {
         alert("There was a problem sending your request. Please try again later.");
+      })
+      .finally(() => {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.removeAttribute("aria-busy");
+        }
       });
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.setAttribute("aria-busy", "true");
+    }
   });
 };
 
