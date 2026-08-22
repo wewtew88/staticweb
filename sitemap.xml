@@ -1,41 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.evercleansolutions.com.au/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/everclean-cleaner-spray-window.jpg</image:loc>
+      <image:title>EverClean cleaner providing window cleaning</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/clean-living-room-melbourne.jpg</image:loc>
+      <image:title>Clean living room in Melbourne</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evercleansolutions.com.au/about.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/clean-living-space.jpg</image:loc>
+      <image:title>Fresh clean living space</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evercleansolutions.com.au/services.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/professional-home-cleaner.jpg</image:loc>
+      <image:title>Professional home cleaner at work</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evercleansolutions.com.au/pricing.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/clean-living-room-melbourne.jpg</image:loc>
+      <image:title>Clean living room for home cleaning planning</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evercleansolutions.com.au/gallery.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/bright-residential-cleaning.jpg</image:loc>
+      <image:title>Bright residential cleaning result</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/professional-window-cleaning-melbourne.jpg</image:loc>
+      <image:title>Professional window cleaning in Melbourne</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evercleansolutions.com.au/contact.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.evercleansolutions.com.au/assets/images/cleaning-service-contact.jpg</image:loc>
+      <image:title>Professional cleaner providing home cleaning service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.evercleansolutions.com.au/privacy.html</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.evercleansolutions.com.au/terms.html</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
