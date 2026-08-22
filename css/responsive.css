@@ -115,7 +115,16 @@
 /* Small Phones (480px) */
 @media (max-width: 480px) {
   .navbar { height: 75px; }
-  .logo h2 { font-size: 22px; }
+  .logo {
+    min-width: 0;
+    gap: 8px;
+  }
+  .logo h2 {
+    min-width: 0;
+    font-size: 21px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
   .logo i { font-size: 24px; }
   .hero h1 { font-size: clamp(1.9rem, 9vw, 2.15rem); }
   .hero-tag { font-size: 13px; }
