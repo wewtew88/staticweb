@@ -52,6 +52,10 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   });
 });
 
+document.querySelectorAll('.social-link[aria-disabled="true"]').forEach(link => {
+  link.addEventListener("click", (event) => event.preventDefault());
+});
+
   /* Sticky Navbar */
   const header = document.querySelector("header");
   window.addEventListener("scroll", () => {
