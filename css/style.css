@@ -215,11 +215,19 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  height: 84px;
   transition: transform 0.3s ease;
 }
+
 .logo:hover {
   transform: translateY(-1px);
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 .logo i {
   font-size: 28px;
