@@ -1,7 +1,3 @@
-/* =====================================================
-  EverClean Solutions Cleaning Website
-   Author: ChatGPT
-===================================================== */
 
 /* Theme Variables */
 :root {
@@ -207,16 +203,20 @@ header {
 .navbar {
   width: min(1200px, 94%);
   margin: auto;
-  height: 84px;
+  height: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .logo {
   display: flex;
   align-items: center;
-  height: 84px;
+  height: 130px;
   transition: transform 0.3s ease;
+          
+  width: 150px;
+  border-radius: 50%;
 }
 
 .logo:hover {
@@ -224,7 +224,7 @@ header {
 }
 
 .logo img {
-  height: 70px;
+  height: 130px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -355,7 +355,10 @@ header .nav-buttons { animation-delay: 0.16s; }
 
   /* When JavaScript adds .active */
   .nav-links.active {
+    border-radius: 20px;
+
     display: flex;
+    
   }
 
   .nav-links li {
