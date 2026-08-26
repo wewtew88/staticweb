@@ -243,6 +243,10 @@ header {
   display: flex;
   gap: 8px;
 }
+.nav-links :active{
+border-radius: 20px;
+
+}
 .nav-links a {
   display: inline-block;
   padding: 10px 13px;
