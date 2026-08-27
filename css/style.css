@@ -1504,3 +1504,163 @@ body > section:not(.hero) {
     font-size: 14px;
   }
 }
+
+/* =========================================================
+   PRICING COMPARISON TABLE
+   ========================================================= */
+
+.pricing-table-wrapper {
+  width: 100%;
+  margin: 40px auto 0;
+  overflow-x: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.pricing-comparison {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+  background: #ffffff;
+  table-layout: fixed;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.pricing-comparison thead {
+  background: #2f5d6f;
+  color: #ffffff;
+}
+
+.pricing-comparison th {
+  padding: 20px 15px;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pricing-comparison th:first-child {
+  text-align: left;
+}
+
+
+/* =========================================================
+   COLUMN WIDTHS
+   ========================================================= */
+
+.pricing-comparison .feature-column {
+  width: 34%;
+}
+
+.pricing-comparison th:not(:first-child),
+.pricing-comparison td:not(:first-child) {
+  width: 22%;
+}
+
+
+/* =========================================================
+   TABLE CELLS
+   ========================================================= */
+
+.pricing-comparison td {
+  padding: 17px 15px;
+  border-bottom: 1px solid #e3e8eb;
+  font-size: 15px;
+  color: #263640;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Feature names */
+.pricing-comparison td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   PRICE ROW
+   ========================================================= */
+
+.pricing-comparison .price-row td {
+  padding: 22px 15px;
+  font-weight: 700;
+  color: #2f5d6f;
+  background: #f5f8f9;
+}
+
+.pricing-comparison .price-row td:not(:first-child) {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   CHECKMARKS
+   ========================================================= */
+
+.pricing-comparison td:not(:first-child) {
+  font-weight: 600;
+}
+
+.pricing-comparison td:first-child {
+  color: #263640;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+   ========================================================= */
+
+.pricing-comparison tbody tr:not(.price-row):hover {
+  background: #f7fafb;
+}
+
+
+/* =========================================================
+   LAST ROW
+   ========================================================= */
+
+.pricing-comparison tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .pricing-table-wrapper {
+    margin-top: 30px;
+    border-radius: 15px;
+  }
+
+  .pricing-comparison {
+    min-width: 700px;
+  }
+
+  .pricing-comparison th {
+    padding: 16px 12px;
+    font-size: 15px;
+  }
+
+  .pricing-comparison td {
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+
+  .pricing-comparison .price-row td:not(:first-child) {
+    font-size: 16px;
+  }
+}
