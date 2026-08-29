@@ -62,3 +62,136 @@
   cursor: pointer;
 }
 
+/* ========================================
+   BOOKING CONFIRMATION MODAL
+======================================== */
+
+.feedback-modal {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 9999;
+
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+
+/* ========================================
+   SHOW MODAL
+======================================== */
+
+.feedback-modal.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* ========================================
+   MODAL BOX
+======================================== */
+
+.modal-box {
+  position: relative;
+
+  width: 90%;
+  max-width: 500px;
+
+  padding: 40px 35px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2);
+
+  transform: translateY(20px) scale(0.96);
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+/* ========================================
+   MODAL ANIMATION
+======================================== */
+
+.feedback-modal.show .modal-box {
+  transform: translateY(0) scale(1);
+}
+
+
+/* ========================================
+   CLOSE X BUTTON
+======================================== */
+
+.modal-close {
+  position: absolute;
+
+  top: 12px;
+  right: 16px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 30px;
+  line-height: 1;
+
+  color: #555;
+
+  cursor: pointer;
+}
+
+
+.modal-close:hover {
+  color: #000;
+}
+
+
+/* ========================================
+   MODAL HEADING
+======================================== */
+
+.modal-box h2 {
+  margin: 0 0 15px;
+}
+
+
+/* ========================================
+   MODAL TEXT
+======================================== */
+
+.modal-box p {
+  margin: 0 0 25px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   PREVENT PAGE SCROLLING WHEN MODAL OPEN
+======================================== */
+
+body.modal-open {
+  overflow: hidden;
+}
